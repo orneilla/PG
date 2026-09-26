@@ -1,6 +1,6 @@
 # Vérification des flashcards « Groupes protecteurs »
 
-Chaque carte a été recoupée avec trois sources :
+Chaque carte a été recoupée avec quatre sources :
 
 - **le fascicule** CH0905 du Pr J.-B. Behr (10 pages, relues en image, pas
   seulement en texte extrait) ;
@@ -8,7 +8,9 @@ Chaque carte a été recoupée avec trois sources :
   Synthesis*, 3ᵉ éd., Wiley, 1999, section par section (pages citées
   ci-dessous et sur chaque carte) ;
 - **P. J. Kocienski, *Protecting Groups*** (Thieme, 1994), pour les mécanismes
-  et les explications « pourquoi ».
+  et les explications « pourquoi » ;
+- **J. Clayden, N. Greeves, S. Warren, *Organic Chemistry*** (2ᵉ éd., OUP,
+  2012), pour d'autres mécanismes.
 
 Résultat : **222 cartes** (211 avant vérification), toutes conformes aux deux
 sources après correction. Chaque note de bas de carte cite désormais la page
@@ -163,6 +165,50 @@ pas de mécanisme dessiné dans l'ouvrage, donc pas de mécanisme sur leur carte
 Les figures ne sont pas copiées depuis le PDF : elles sont redessinées, ce qui
 les rend nettes et lisibles sur fond sombre.
 
+## Mécanismes (Clayden)
+
+Le chapitre 23 (« Chemoselectivity and protecting groups ») et les chapitres
+10-11 dessinent dix mécanismes qui s'appliquent au fascicule. Ils sont
+redessinés à l'identique :
+
+| Mécanisme | Clayden | Cartes |
+| --- | --- | --- |
+| Pose du THP (dihydropyrane, H⁺) | p. 551 | THP · poser |
+| Retrait du THP (hydrolyse d'acétal) | p. 550 | THP · retirer (remplace le schéma général de Kocienski) |
+| Retrait d'un silyle par F⁻ ou par H₃O⁺ | p. 550 | TBS, TMS, TIPS, TBDPS · retirer |
+| Formation d'un ester tert-butylique | p. 556 | t-Bu · poser (dessiné sur un ester) |
+| Retrait du Boc en acide | p. 558 | Boc · retirer (dessiné sur le carbamate, remplace le schéma de Kocienski dessiné sur un ester) |
+| Retrait du Cbz (HBr/AcOH ou H₂/Pd) | p. 557 | Cbz · retirer |
+| Formation d'un acétal | p. 226 | cétal · poser, acétonide · poser |
+| Catalyse nucléophile par la pyridine | p. 200 | Ac, Bz, Piv · poser |
+| Hydrolyse basique d'un ester | p. 210 | Bz, Piv · retirer |
+| Hydrolyse acide d'un amide | p. 212 | formamide, acétamide · retirer |
+
+Au total, 20 mécanismes, sur 27 cartes.
+
+## Contrôle des dessins
+
+Le générateur contrôle chaque molécule avant de l'écrire :
+- atomes superposés ;
+- liaisons qui se croisent ;
+- étiquette posée sur une liaison ;
+- longueurs de liaison anormales.
+
+Les 117 dessins ont en plus été relus un par un, à l'œil, en grand. Corrigé :
+
+- **TBDPS** : les deux phényles étaient trop proches l'un de l'autre.
+- **Mécanisme au mercure (dithiocétal)** : un OH était serré contre le mercure.
+- **Mécanisme du SEM** : le signe « − » du silicium était perdu (la police de
+  RDKit n'a pas le signe moins typographique).
+- **Schéma de pose du THP** : l'astérisque du nouveau centre stéréogène
+  ressemblait à un radical ; il est retiré du schéma et reste sur la carte THP,
+  où il est expliqué.
+
+Choix de dessin assumés :
+- les groupes t-Bu et SiMe₃ sont dessinés en croix, comme dans ChemDraw ;
+- la double liaison de l'éther d'énol de l'allyle est croisée, parce que sa
+  géométrie n'est pas donnée par les sources.
+
 ## Place occupée sur Neon
 
 Mesuré sur Postgres 16 après installation du catalogue :
@@ -170,9 +216,9 @@ Mesuré sur Postgres 16 après installation du catalogue :
 | Poste | Taille |
 | --- | --- |
 | 222 cartes (texte, avec index) | ≈ 290 Ko |
-| 76 images SVG, dont les 10 mécanismes | 436 Ko bruts, ≈ 385 Ko en base avec l'index |
+| 86 images SVG, dont les 20 mécanismes | ≈ 490 Ko en base avec l'index |
 | Sauvegardes hebdomadaires | ≈ 25 Ko de plus chacune, ≈ 200 Ko pour les 8 gardées |
-| **Total** | **≈ 0,9 Mo, moins de 0,2 % des 512 Mo du palier gratuit** |
+| **Total** | **≈ 1 Mo, soit 0,2 % des 512 Mo du palier gratuit** |
 | Cinq ans de révisions (≈ 15 par carte) | ≈ 0,6 Mo de plus |
 
 Les images sont dans une table à part et ne sont pas copiées dans les

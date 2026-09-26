@@ -5,13 +5,13 @@ Cours CH0905, *Synthèse totale de produits naturels* (Pr J.-B. Behr).
 - `905-Fascicule_Groupes-protecteurs2026.pdf` — le fascicule du cours.
 - `Protective Groups in Organic Synthesis` (Greene & Wuts, 3ᵉ éd.) — l'ouvrage
   de référence que recommande le fascicule.
-- `Protecting Groups` (Kocienski, Thieme) — la source des mécanismes et des
-  explications.
+- `Protecting Groups` (Kocienski, Thieme) et `Clayden` (*Organic Chemistry*,
+  2ᵉ éd.) — les sources des mécanismes et des explications.
 - `apercu-cartes-groupes-protecteurs.html` — aperçu des 222 flashcards tirées
   du fascicule, telles qu'elles s'affichent dans Questline (ouvrir dans un
   navigateur). Utile pour les relire à côté du fascicule.
 - `verification-cartes.md` — la vérification carte par carte contre le
-  fascicule, Greene & Wuts et Kocienski : erreurs corrigées, ajouts,
+  fascicule, Greene & Wuts, Kocienski et le Clayden : erreurs corrigées, ajouts,
   mécanismes, coquilles du fascicule, place occupée sur Neon.
 
 Les cartes vivent dans Questline (`src/lib/cartes/catalogues/`, branche
