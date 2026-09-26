@@ -1,12 +1,14 @@
 # Vérification des flashcards « Groupes protecteurs »
 
-Chaque carte a été recoupée avec deux sources :
+Chaque carte a été recoupée avec trois sources :
 
 - **le fascicule** CH0905 du Pr J.-B. Behr (10 pages, relues en image, pas
   seulement en texte extrait) ;
 - **l'ouvrage** T. W. Greene et P. G. M. Wuts, *Protective Groups in Organic
   Synthesis*, 3ᵉ éd., Wiley, 1999, section par section (pages citées
-  ci-dessous et sur chaque carte).
+  ci-dessous et sur chaque carte) ;
+- **P. J. Kocienski, *Protecting Groups*** (Thieme, 1994), pour les mécanismes
+  et les explications « pourquoi ».
 
 Résultat : **222 cartes** (211 avant vérification), toutes conformes aux deux
 sources après correction. Chaque note de bas de carte cite désormais la page
@@ -97,20 +99,69 @@ sélectivité, relues dans Greene.
 groupe dessiné (TBS = SiMe₂t-Bu, TIPS = Si(i-Pr)₃, Ts en para, Troc =
 CO₂CH₂CCl₃…) et à l'œil.
 
-## Ce qui n'est écrit mot pour mot dans aucune des deux sources
+## Explications « pourquoi » : rien hors des sources
 
-Quelques explications « pourquoi » sont des notions de cours classiques,
-cohérentes avec Greene mais pas écrites telles quelles :
+Règle appliquée : une explication n'apparaît que si le fascicule, Greene ou
+Kocienski la donne, et elle cite sa page. Les 130 notes ont été reprises une à
+une.
 
-- la conformation qui fait préférer le cycle à 5 à l'acétonide et le cycle à 6
-  au benzylidène ;
-- la fragmentation du SEM par F⁻ ;
-- la β-élimination du Troc par le zinc ;
-- la perte de CO₂ des acides carbamiques (Boc, Cbz, Alloc) ;
-- l'hémiacétal du BOM qui perd le formaldéhyde ;
-- l'activation des dithiocétals par les métaux thiophiles.
+- **Réécrites pour coller au texte de Kocienski**, avec sa page :
+  - t-Bu (E1, carbocation, p. 59) ;
+  - allyle (relais par l'éther d'énol, p. 62) ;
+  - Bn (BnI formé in situ, p. 50 ; hydrogénolyse, p. 8) ;
+  - PMB (transfert d'électron à la DDQ, p. 9) ;
+  - Tr (secondaires très lents, p. 58 ; carbocation stable, p. 55) ;
+  - MOM (acide minéral dilué à chaud, p. 5) ;
+  - BOM (libère du formaldéhyde, p. 78) ;
+  - SEM (fragmentation, p. 7) ;
+  - THP (ion oxonium, p. 85) ;
+  - TMS (effets stériques, p. 29) ;
+  - Piv (carbonyle protégé, p. 22-24) ;
+  - acétonide et benzylidène (taille de cycle, p. 101) ;
+  - amides (conditions dures, p. 3) ;
+  - trifluoroacétamide (p. 3) ;
+  - Boc, Cbz, Alloc, Troc (carbocation p. 4, acide carbamique p. 186, π-allyle
+    p. 10 et 141, zinc p. 7) ;
+  - Ts (p. 209 et 212) ;
+  - dithiocétals (p. 5, 171, 173) ;
+  - Dean-Stark et variante silylée (p. 158 et 160).
+- **Retirées, faute de source** :
+  - la protonation de l'isobutène à la pose du t-Bu ;
+  - « acides de Lewis fluorés » (BF₃, LiBF₄) ;
+  - l'acylpyridinium de la DMAP (reste le facteur 10⁴, donné par Greene et
+    Kocienski) ;
+  - « l'acétyle part sur le méthanol » ;
+  - « toluène » dans l'hydrogénolyse ;
+  - l'hémiacétal du BOM ;
+  - l'explication du ribose (« 80 % pyranose ») ;
+  - « l'acide p-nitrobenzoïque est plus acide ».
+- **Un chiffre précisé** : le TBDPS est 100 à 250 fois plus stable que le TBS
+  en acide selon Kocienski (p. 38), environ 100 fois selon Greene. La carte
+  donne les deux.
 
-Elles sont exactes, mais c'est à toi de juger si ton professeur les attend.
+## Mécanismes (Kocienski)
+
+Ni le fascicule ni Greene ne dessinent de mécanismes. Kocienski en dessine dix
+pour des groupes du fascicule. Ils sont redessinés à l'identique, étapes et
+flèches, au verso de la carte « Retirer » :
+
+| Mécanisme | Kocienski | Cartes |
+| --- | --- | --- |
+| Rupture acide d'un groupe tert-butyle | schéma 1.3, p. 4 | t-Bu, Boc (dessiné sur un ester, comme dans l'ouvrage) |
+| Hydrolyse d'un O,O-acétal | schéma 1.6, p. 5 | acétonide, cétal, THP, MOM |
+| Dithiocétal et HgCl₂ | schéma 1.7, p. 6 | dithiocétal |
+| Fluorure et éther TBS | schéma 1.8, p. 6 | TBS, carte « pourquoi F⁻ » |
+| Fragmentation du SEM | schéma 1.10, p. 7 | SEM |
+| Élimination réductrice par le zinc | schéma 1.11, p. 7 | Troc (dessiné sur un ester trichloroéthylique) |
+| PMB et DDQ | schéma 1.13, p. 9 | PMB |
+| Birch sur un éther benzylique | schéma 1.14, p. 10 | Bn |
+| Isomérisation d'un allyle par Rh(I) | schéma 1.16, p. 11 | allyle |
+| Cycle catalytique du Pd(0) | schéma 4.57, p. 141 | Alloc (dessiné sur un ester d'allyle) |
+
+Les autres groupes (TIPS, TBDPS, esters, méthylène, carbonate, Cbz, Ts…) n'ont
+pas de mécanisme dessiné dans l'ouvrage, donc pas de mécanisme sur leur carte.
+Les figures ne sont pas copiées depuis le PDF : elles sont redessinées, ce qui
+les rend nettes et lisibles sur fond sombre.
 
 ## Place occupée sur Neon
 
@@ -119,9 +170,9 @@ Mesuré sur Postgres 16 après installation du catalogue :
 | Poste | Taille |
 | --- | --- |
 | 222 cartes (texte, avec index) | ≈ 290 Ko |
-| 66 images SVG | 274 Ko bruts, ≈ 190 Ko stockés (compression TOAST) |
+| 76 images SVG, dont les 10 mécanismes | 436 Ko bruts, ≈ 385 Ko en base avec l'index |
 | Sauvegardes hebdomadaires | ≈ 25 Ko de plus chacune, ≈ 200 Ko pour les 8 gardées |
-| **Total** | **≈ 0,8 Mo, soit 0,16 % des 512 Mo du palier gratuit** |
+| **Total** | **≈ 0,9 Mo, moins de 0,2 % des 512 Mo du palier gratuit** |
 | Cinq ans de révisions (≈ 15 par carte) | ≈ 0,6 Mo de plus |
 
 Les images sont dans une table à part et ne sont pas copiées dans les
